@@ -18,6 +18,10 @@ html {
   color: #222;
   scroll-behavior: smooth;
   line-height: 1.4;
+  max-width: 1000px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -29,5 +33,99 @@ img {
   max-width: 100%;
 }
 
+header>ol{
+list-style: none;
+display:inline-block;
+text-align: right;
+}
 
+header>img{
+  float: left;
+}
 
+main{
+  padding-top: 3em;
+}
+
+.grid1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  
+  }
+
+  .limited>li{
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .try-it{
+    display: grid;
+  grid-template-areas: 
+    "item1 item1 item1"
+    "item2 item3 item4";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em; 
+  }
+
+  #item1{
+  grid-area: item1;
+  }
+
+  #item2{
+  grid-area: item2;
+  }
+
+  #item3{
+    grid-area: item3;
+  }
+
+  #item4{
+    grid-area: item4;
+  }
+
+  h2{
+  text-align: center;
+  }
+
+  .reviews{
+    color: #fff;
+    background-color: black;
+    padding: 1em;
+  }
+
+  .reviews{
+    display: grid;
+    grid-template-areas: 
+    "header-review header-review header-review"
+    "review1 review2 review3";
+    grid-template-columns:1fr 1fr 1fr;
+  
+  }
+
+  .reviews>h2{
+    text-align: center;
+  }
+
+  #review1{
+    grid-area: review1;
+  }
+
+  #review2{
+    grid-area: review2;
+  }
+
+  #review3{
+    grid-area: review3;
+  }
+
+  .behind{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+
+  footer{
+    text-align: center;
+    padding-top: 2em;
+  }
