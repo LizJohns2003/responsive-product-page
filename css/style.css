@@ -39,15 +39,14 @@ img {
   max-width: 100%;
 }
 
-header>ol{
+header{
 list-style: none;
-display:inline-block;
-text-align: right;
+display: grid;
+grid-template-columns: 3fr 1fr 1fr;
+justify-content: right;
 }
 
-header>img{
-  float: left;
-}
+
 
 main{
   padding-top: 3em;
@@ -56,13 +55,20 @@ main{
 .grid1{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  gap: 0.5em;
   
   }
 
   .limited>li{
     list-style: none;
     text-decoration: none;
+  }
+
+  #button{
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 1em;
   }
 
   .try-it{
@@ -107,7 +113,10 @@ main{
     "review1 review2 review3";
     grid-template-columns:1fr 1fr 1fr;
     gap: 1em;
-  
+  }
+
+  li{
+    list-style-type: none;
   }
 
   .reviews>h2{
