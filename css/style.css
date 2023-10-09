@@ -24,11 +24,12 @@ html {
   color: #222;
   scroll-behavior: smooth;
   line-height: 1.4;
-  max-width: 62.5em;
+  width: 38em;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 body {
   margin: 0;
@@ -36,18 +37,20 @@ body {
 
 img {
   max-width: 100%;
-  
+  display: inline-block;
 }
 
 header{
 list-style: none;
 display: flex;
+text-align: justify;
 
 }
 
 header>li{
 display: flex;
-justify-content: flex-end;
+justify-content: right;
+margin-left: 100%;
 }
 
 
@@ -64,26 +67,31 @@ main{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.5em;
   justify-content: center;
+  margin: 0%;
+  min-width: 38em;
   }
 
     .photo1{
       grid-area: top;
-      width: 100%;
+      min-width: 38em;
       padding: 0%;
     }
 
     .photo2{
       grid-area: bottom1;
+      min-width: 12em;
       padding: 0%;
     }
 
     .photo3{
       grid-area: bottom2;
+      min-width: 12em;
       padding: 0%;
     }
 
     .photo4{
       grid-area: bottom3;
+      min-width: 12em;
       padding: 0%;
     }
 
@@ -96,13 +104,14 @@ main{
     color: #fff;
     background-color: black;
     text-decoration: none;
-    padding: 1em;
+    padding: 0.5em;
   }
 
   .try-it{
     display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em; 
+  padding-bottom: 2em;
   }
 
   
@@ -117,8 +126,9 @@ main{
     padding: 1em;
   }
 
-  .reviews{
-   
+  .reviews>p{
+    width: 32em;
+    text-align: center;
   }
 
   li{
@@ -135,17 +145,26 @@ main{
     padding-top: 2em;
   }
 
-
-  @media (min-width:360px){
-
-    header{
-      display: flex;
-      align-items: center;
-    }
-
-    header>ol{
-      display: flex;
-    }
+  h1{
+    font-size: var(--font-size-xl);
   }
 
+  h2{
+    font-size: var(--font-size-large);
+  }
+
+  p{
+    font-size: var(--font-size-base);
+  }
+
+  @media (min-width:48em){
+
+ 
+  }
+
+  @media (min-width:60em){
+
+  }
+
+  @media (min-width:62.5em)
  
