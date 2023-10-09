@@ -243,6 +243,86 @@ main{
 
   @media (min-width:60em){
 
+    .grid1{
+      display: grid;
+      grid-template-areas: 
+      "top bottom1"
+      "bottom2 bottom3";
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 0.5em;
+      justify-content: center;
+    }
+
+    .photo1{
+      grid-area: top;
+      min-width: 15em;
+      padding: 0%;
+    }
+
+    .photo2{
+      grid-area: bottom1;
+      min-width: 15em;
+      padding: 0%;
+    }
+
+    .photo3{
+      grid-area: bottom2;
+      min-width: 15em;
+      padding: 0%;
+    }
+
+    .photo4{
+      grid-area: bottom3;
+      min-width: 15em;
+      padding: 0%;
+    }
+
+    body{
+      width: 60em;
+    }
+
+    .try-it{
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em; 
+    padding-bottom: 2em;
+    }
+
+    .behind{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+    }
+
+    .reviews{
+      display: grid;
+      grid-template-areas:
+      "top top top"
+      "bottom1 bottom2 bottom3";
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap:1em;
+    }
+
+    #reviewh1{
+      grid-area: top;
+    }
+
+    #review1{
+      grid-area: bottom1;
+    }
+
+    #review2{
+      grid-area: bottom2;
+    }
+
+    #review3{
+      grid-area: bottom3;
+    }
+
+    breakpoint{
+
+    }
+
   }
 
   @media (min-width:62.5em)
