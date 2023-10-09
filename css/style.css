@@ -41,9 +41,13 @@ img {
 
 header{
 list-style: none;
-display: grid;
-grid-template-columns: 3fr 1fr 1fr;
-justify-content: right;
+display: flex;
+
+}
+
+header>li{
+display: flex;
+justify-content: flex-end;
 }
 
 
@@ -54,10 +58,28 @@ main{
 
 .grid1{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "top top top"
+  "bottom1 bottom2 bottom3";
+  grid-template-columns: 1fr 3fr;
   gap: 0.5em;
-  
   }
+
+    .photo1{
+      grid-area: top;
+    }
+
+    .photo2{
+      grid-area: bottom1;
+    }
+
+    .photo3{
+      grid-area: bottom2;
+    }
+
+    .photo4{
+      grid-area: bottom3;
+    }
 
   .limited>li{
     list-style: none;
@@ -73,28 +95,11 @@ main{
 
   .try-it{
     display: grid;
-  grid-template-areas: 
-    "item1 item1 item1"
-    "item2 item3 item4";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1em; 
   }
 
-  #item1{
-  grid-area: item1;
-  }
-
-  #item2{
-  grid-area: item2;
-  }
-
-  #item3{
-    grid-area: item3;
-  }
-
-  #item4{
-    grid-area: item4;
-  }
+  
 
   h2{
   text-align: center;
@@ -107,44 +112,28 @@ main{
   }
 
   .reviews{
-    display: grid;
-    grid-template-areas: 
-    "review1 review1 review1"
-    "review1 review2 review3";
-    grid-template-columns:1fr 1fr 1fr;
-    gap: 1em;
+   
   }
 
   li{
     list-style-type: none;
   }
 
-  .reviews>h2{
-    text-align: center;
-  }
-
-  #review1{
-    grid-area: review1;
-  }
-
-  #review2{
-    grid-area: review2;
-  }
-
-  #review3{
-    grid-area: review3;
-  }
 
   .behind{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    padding-bottom: 2em;
+   padding-bottom: 2em;
   }
 
   footer{
     text-align: center;
     padding-top: 2em;
+  }
+
+
+
+  .limited>#val-type{
+    float: right;
+    padding-bottom: 2em;
   }
 
   @media (min-width:360px){
