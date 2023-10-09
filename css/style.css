@@ -158,7 +158,48 @@ main{
   }
 
   @media (min-width:48em){
+    
+    .grid1{
+      display: grid;
+      grid-template-areas: 
+      "top bottom1"
+      "bottom2 bottom3";
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 0.5em;
+      justify-content: center;
+    }
 
+    .photo1{
+      grid-area: top;
+      min-width: 24em;
+      padding: 0%;
+    }
+
+    .photo2{
+      grid-area: bottom1;
+      min-width: 24em;
+      padding: 0%;
+    }
+
+    .photo3{
+      grid-area: bottom2;
+      min-width: 24em;
+      padding: 0%;
+    }
+
+    .photo4{
+      grid-area: bottom3;
+      min-width: 24em;
+      padding: 0%;
+    }
+
+    body{
+      width: 48em;
+    }
+
+    breakpoint{
+
+    }
  
   }
 
