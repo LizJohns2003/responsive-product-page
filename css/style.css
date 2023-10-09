@@ -197,6 +197,44 @@ main{
       width: 48em;
     }
 
+    .try-it{
+      display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em; 
+    padding-bottom: 2em;
+    }
+
+    .behind{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+    }
+
+    .reviews{
+      display: grid;
+      grid-template-areas:
+      "top top top"
+      "bottom1 bottom2 bottom3";
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap:1em;
+    }
+
+    #reviewh1{
+      grid-area: top;
+    }
+
+    #review1{
+      grid-area: bottom1;
+    }
+
+    #review2{
+      grid-area: bottom2;
+    }
+
+    #review3{
+      grid-area: ;
+    }
+
     breakpoint{
 
     }
