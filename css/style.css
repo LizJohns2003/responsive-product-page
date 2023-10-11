@@ -335,6 +335,11 @@ main{
       gap: 0;
       padding: 0%;
     }
+
+    #top-grid{
+      display: flex;
+      justify-content: center;
+    }
   }
 
  
